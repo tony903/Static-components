@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="renderer" content="webkit"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+  <link rel="stylesheet" type="text/css" href="styles/table.css">
+  <link rel="stylesheet" type="text/css" href="styles/btn.css">
+  <link rel="stylesheet" type="text/css" href="styles/pagination.css">
+  <link rel="stylesheet" type="text/css" href="styles/iconfont/iconfont.css">
+  <link rel="stylesheet" type="text/css" href="styles/temporary.css">
+  <title>表格</title>
+</head>
+<body>
+
+<!-- 表格 -->
+<table class="t-table">
+  <thead>
+    <tr>
+      <th>
+        <input type="checkbox">
+      </th>
+      <th>主要字段</th>
+      <th>类型</th>
+      <th>受理号码</th>
+      <th>用户姓名</th>
+      <th>用户级别</th>
+      <th>用户品牌</th>
+      <th>操作状态</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <input type="checkbox">
+      </td>
+      <td>100231233</td>
+      <td>服务类 &gt; 业务查询 &gt; 消费信息查询</td>
+      <td>13723890766</td>
+      <td>苏三小</td>
+      <td class="star-level">
+        <i class="iconfont icon-xingxing"></i>
+        <i class="iconfont icon-xingxing"></i>
+        <i class="iconfont icon-xingxing"></i>
+        <i class="iconfont icon-xingxing disabled"></i>
+        <i class="iconfont icon-xingxing disabled"></i>
+      </td>
+      <td>神州行</td>
+      <td class="status-todo">
+        <span>未处理</span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <input type="checkbox">
+      </td>
+      <td>100231233</td>
+      <td>服务类 &gt; 业务查询 &gt; 消费信息查询</td>
+      <td>13723890766</td>
+      <td>苏三小</td>
+      <td class="star-level">
+        <i class="iconfont icon-xingxing"></i>
+        <i class="iconfont icon-xingxing"></i>
+        <i class="iconfont icon-xingxing"></i>
+        <i class="iconfont icon-xingxing"></i>
+        <i class="iconfont icon-xingxing disabled"></i>
+      </td>
+      <td>4G套餐</td>
+      <td class="status-done">
+        <span>已处理</span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <input type="checkbox">
+      </td>
+      <td>100231233</td>
+      <td>服务类 &gt; 业务查询 &gt; 消费信息查询</td>
+      <td>13723890766</td>
+      <td>苏三小</td>
+      <td class="star-level">
+        <i class="iconfont icon-xingxing"></i>
+        <i class="iconfont icon-xingxing"></i>
+        <i class="iconfont icon-xingxing disabled"></i>
+        <i class="iconfont icon-xingxing disabled"></i>
+        <i class="iconfont icon-xingxing disabled"></i>
+      </td>
+      <td>神州行</td>
+      <td class="status">
+        <span>默认的</span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- 暂无数据记录 -->
+<div class="norecord">
+  <i class="iconfont icon-norecord"></i>
+  <p>暂无数据记录</p>
+</div>
+
+<!-- 示例说明 -->
+<div class="table-desc">
+  <h3>可以为 &lt;tr&gt; 增加整行样式：</h3>
+  <ol>
+    <li>选中   selected</li>
+    <li>消息   info</li>
+    <li>成功   success</li>
+    <li>错误   error</li>
+    <li>警告   warning</li>
+  </ol>
+</div>
+
+</body>
+</html>

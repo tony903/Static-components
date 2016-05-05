@@ -1,0 +1,325 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="renderer" content="webkit"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+  <link rel="stylesheet" type="text/css" href="styles/list.css">
+  <link rel="stylesheet" type="text/css" href="styles/table.css">
+  <link rel="stylesheet" type="text/css" href="styles/btn.css">
+  <link rel="stylesheet" type="text/css" href="styles/pagination.css">
+  <link rel="stylesheet" type="text/css" href="styles/iconfont/iconfont.css">
+  <link rel="stylesheet" type="text/css" href="lib/zTree_v3/css/zTreeStyle/zTreeStyle.css">
+  <title>左侧树＋右侧列表</title>
+</head>
+<body>
+
+<div class="t-list-title">
+  <h2>组织管理</h2>
+</div>
+
+<!-- 左侧定宽，右侧自适应 -->
+<div class="t-layout-ra">
+  <div class="ra-left">
+    <!-- 左侧内容 -->
+    <div class="ztree" id="treeDemo"></div>
+    <!-- 左侧内容 end -->
+  </div>
+  <div class="ra-right">
+    <div class="ra-rightinner">
+      
+      <!-- 右侧内容 -->
+
+      <!-- 列表 -->
+      <div class="t-list">
+        
+        <!-- 如不需要搜索，删除这部分 -->
+        <div class="t-list-search columns-4">
+          
+          <!-- 检索字段 -->
+          <ul class="t-list-search-item">
+            <li>
+              <!-- 必填项为label追加样式: necessary -->
+              <label for="fm01">
+                受理号码
+              </label>
+              <div>
+                <input id="fm01" type="text">
+              </div>
+            </li>
+            <li>
+              <label for="fm02">
+                开始时间
+              </label>
+              <div>
+                <input class="bg-date" id="fm02" type="text">
+              </div>
+            </li>
+            <li>
+              <label for="fm03">
+                结束时间
+              </label>
+              <div>
+                <input class="bg-date" id="fm03" type="text">
+              </div>
+            </li>
+            <li>
+              <label for="fm04">
+                用户姓名
+              </label>
+              <div>
+                <input id="fm04" type="text">
+              </div>
+            </li>
+            <li>
+              <label for="fm05">
+                下拉列表
+              </label>
+              <div>
+                <input class="bg-select" id="fm05" type="text">
+              </div>
+            </li>
+            <li>
+              <label for="fm06">
+                菜单树
+              </label>
+              <div>
+                <input class="bg-tree" id="fm06" type="text">
+              </div>
+            </li>
+            <!-- 时间组 -->
+            <li class="timegroup">
+              <label for="fm07">
+                起止日期
+              </label>
+              <div>
+                <div>
+                  <input id="fm07" type="text" value="2016-02-18">
+                </div>
+                <span>~</span>
+                <div>
+                  <input id="fm07" type="text" value="2016-03-01">
+                </div>
+              </div>
+            </li>
+
+            <!-- 默认隐藏的字段，显示 show 隐藏 hide -->
+            <li class="hide">
+              <label for="fm09">
+                警示字段
+              </label>
+              <div>
+                <input class="success" id="fm09" type="text" value="正确">
+              </div>
+            </li>
+            <li class="hide">
+              <label for="fm10">
+                警示字段
+              </label>
+              <div>
+                <input class="error" id="fm10" type="text" value="错误">
+              </div>
+            </li>
+            <li class="hide">
+              <label for="fm11">
+                警示字段
+              </label>
+              <div>
+                <input class="warning" id="fm11" type="text" value="警告">
+              </div>
+            </li>
+            
+            <li>
+              <label>
+                &nbsp;
+              </label>
+              <div>
+                <a href="#nogo" class="t-btn">
+                  <i class="iconfont icon-chaxun"></i>
+                  查询
+                </a>
+              </div>
+            </li>
+          </ul>
+          <!-- 展开/闭合按钮 -->
+          <span class="t-list-search-more">
+            <i class="iconfont icon-iconfontjiantou-copy-copy"></i>
+            <!-----------------------------------------------------------
+            ---- 未展开状态：
+            ---- <i class="iconfont icon-iconfontjiantou-copy-copy"></i>
+            ---- 已展开状态：
+            ---- <i class="iconfont icon-iconfontjiantou-copy"></i>
+            -------------------------------------------------------------
+            -->
+          </span>
+
+        </div>
+
+        <div class="t-list-btns">
+          <p>请求记录</p>
+          <span>(共124条记录)</span>
+          <a href="#nogo" title="刷新">
+            <i class="iconfont icon-shuaxin"></i>
+          </a>
+          <div>
+            <a class="t-btn t-btn-blue">新增</a>
+            <a class="t-btn t-btn-blue">修改</a>
+            <a class="t-btn t-btn-blue">按钮</a>
+          </div>
+        </div>
+        
+        <div class="t-list-result">
+            
+          <!-- 表格 -->
+          <table class="t-table">
+            <thead>
+              <tr>
+                <th>
+                  <input type="checkbox">
+                </th>
+                <th>主要字段</th>
+                <th>类型</th>
+                <th>受理号码</th>
+                <th>用户姓名</th>
+                <th>用户级别</th>
+                <th>用户品牌</th>
+                <th>操作状态</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <input type="checkbox">
+                </td>
+                <td>100231233</td>
+                <td>服务类 &gt; 业务查询 &gt; 消费信息查询</td>
+                <td>13723890766</td>
+                <td>苏三小</td>
+                <td class="star-level">
+                  <i class="iconfont icon-xingxing"></i>
+                  <i class="iconfont icon-xingxing"></i>
+                  <i class="iconfont icon-xingxing"></i>
+                  <i class="iconfont icon-xingxing disabled"></i>
+                  <i class="iconfont icon-xingxing disabled"></i>
+                </td>
+                <td>神州行</td>
+                <td class="status-todo">
+                  <span>未处理</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="checkbox">
+                </td>
+                <td>100231233</td>
+                <td>服务类 &gt; 业务查询 &gt; 消费信息查询</td>
+                <td>13723890766</td>
+                <td>苏三小</td>
+                <td class="star-level">
+                  <i class="iconfont icon-xingxing"></i>
+                  <i class="iconfont icon-xingxing"></i>
+                  <i class="iconfont icon-xingxing"></i>
+                  <i class="iconfont icon-xingxing"></i>
+                  <i class="iconfont icon-xingxing disabled"></i>
+                </td>
+                <td>4G套餐</td>
+                <td class="status-done">
+                  <span>已处理</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="checkbox">
+                </td>
+                <td>100231233</td>
+                <td>服务类 &gt; 业务查询 &gt; 消费信息查询</td>
+                <td>13723890766</td>
+                <td>苏三小</td>
+                <td class="star-level">
+                  <i class="iconfont icon-xingxing"></i>
+                  <i class="iconfont icon-xingxing"></i>
+                  <i class="iconfont icon-xingxing disabled"></i>
+                  <i class="iconfont icon-xingxing disabled"></i>
+                  <i class="iconfont icon-xingxing disabled"></i>
+                </td>
+                <td>动感地带</td>
+                <td class="status">
+                  <span>默认的</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          
+          <!-- 分页 -->
+          <div class="t-page">
+            <ul>
+              <li class="disabled"><span>上一页</span></li>
+              <li class="active"><span>1</span></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><span>...</span></li>
+              <li><a href="#">8</a></li>
+              <li><a href="#">9</a></li>
+              <li><a href="#">10</a></li>
+              <li><a href="#">下一页</a></li>
+            </ul>
+            <!-- 操作按钮
+            <div class="page-btns">
+              <a class="t-btn">导出</a>
+              <a class="t-btn">删除</a>
+            </div> -->
+          </div>
+          
+        </div>
+            
+      </div>
+
+      <!-- 右侧内容 end -->
+
+    </div>
+  </div>
+</div>
+
+<!-- 左侧树 -->
+<script type="text/javascript" src="lib/jquery/jquery.js"></script>
+<script type="text/javascript" src="lib/zTree_v3/js/jquery.ztree.core-3.5.min.js"></script>
+<script type="text/javascript">
+  $(function(){
+    var setting = {  
+        check: {  
+            enable: true  //是否启用 复选框  
+        },  
+        data: {  
+            simpleData: {  
+                enable: true  
+            }  
+        }  
+    };  
+    var zNodes =[  
+        { id:1, pId:0, name:"我的收藏", open:true,nocheck:true}, //pId 的 值就是上一级的id值  
+        { id:11, pId:1, name:"客服答疑技巧", open:true,nocheck:true},  
+        { id:111, pId:11, name:"业务咨询",nocheck:true},  
+        { id:112, pId:11, name:"客户投诉",nocheck:true},  
+        { id:113, pId:11, name:"其它来电",nocheck:true},  
+        { id:114, pId:11, name:"国际漫游",nocheck:true}, 
+        { id:12, pId:1, name:"学习&提升", open:true,nocheck:true}, 
+        { id:123, pId:12, name:"文件夹",nocheck:true}, 
+        { id:121, pId:12, name:"TEST",nocheck:true},
+        { id:13, pId:1, name:"班组工作",nocheck:true}, 
+        { id:131, pId:13, name:"测试公告6",nocheck:true},
+        { id:2, pId:0, name:"系统收藏", open:true,nocheck:true},
+        { id:21, pId:2, name:"文化建设", open:true,nocheck:true},  
+        { id:211, pId:21, name:"班组建设",nocheck:true},  
+        { id:212, pId:21, name:"兴趣小组",nocheck:true}, 
+        { id:22, pId:2, name:"话务技巧", open:true,nocheck:true}, 
+        { id:221, pId:22, name:"10086",nocheck:true},  
+        { id:222, pId:22, name:"12580",nocheck:true}
+    ];  
+     
+    $.fn.zTree.init($("#treeDemo"), setting, zNodes);
+
+  });
+</script>
+
+</body>
+</html>
