@@ -264,5 +264,20 @@
       
 </div>
 
+<script type="text/javascript" src="lib/jquery/jquery.js"></script>
+<!-- 展开/闭合控制，本段JS纯属实验，项目实施时请高手们替换掉 -->
+<script type="text/javascript">
+  $(function(){
+    $('.t-list-search-more').click(function(){
+      if($('.t-list-search-item li').hasClass('hide')) {
+        $('.t-list-search-item li.hide').addClass('show').removeClass('hide');
+        $(this).children('i').addClass('icon-iconfontjiantou-copy').removeClass('icon-iconfontjiantou-copy-copy');
+      } else if($('.t-list-search-item li').hasClass('show')) {
+        $('.t-list-search-item li.show').addClass('hide').removeClass('show');
+        $(this).children('i').addClass('icon-iconfontjiantou-copy-copy').removeClass('icon-iconfontjiantou-copy');
+      }
+    })
+  });
+</script>
 </body>
 </html>
