@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="renderer" content="webkit"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+  <link rel="stylesheet" type="text/css" href="styles/tabs.css">
+  <link rel="stylesheet" type="text/css" href="styles/iconfont/iconfont.css">
+  <title>选项卡</title>
+</head>
+<body>
+
+<!-- 选项卡 -->
+<div class="t-tabs">
+  <ul class="t-tabs-items">
+    <!-- 当前页签 active -->
+    <li class="active">
+      <a href="#nogo">我是选项卡</a>
+    </li>
+    <li>
+      <a href="#nogo">我也是</a>
+    </li>
+    <li>
+      <a href="#nogo">我们大家都是</a>
+    </li>
+    <li>
+      <a href="#nogo">呵呵</a>
+    </li>
+  </ul>
+  <ul class="t-tabs-wrap">
+    <!-- 当前内容 selected -->
+    <li class="selected">
+      内容1
+    </li>
+    <li>
+      内容2
+    </li>
+    <li>
+      内容3
+    </li>
+    <li>
+      内容4
+    </li>
+  </ul>
+</div>
+
+<script type="text/javascript" src="lib/jquery/jquery.js"></script>
+<!-- tab切换，本段JS纯属实验，项目实施时请高手们替换掉 -->
+<script type="text/javascript">
+  $(function(){
+    $('.t-tabs-items li').click(function(){
+      var $t = $(this).index();
+      $(this).addClass('active').siblings().removeClass('active');
+      $('.t-tabs-wrap li').eq($t).addClass('selected').siblings().removeClass('selected');
+    })
+  });
+</script>
+
+</body>
+</html>
