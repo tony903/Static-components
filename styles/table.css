@@ -31,9 +31,9 @@
 .t-table tbody > tr.warning:hover td { background-color: #fff2a6; }
 
 /* 暂无数据记录 */
-.norecord { text-align: center; padding-top: 10px; }
-.norecord i { font-size: 30px; line-height: 30px; color: #D8D8D8;}
-.norecord p { font-size: 12px; margin: 0; line-height: 24px; color: #999;}
+.t-norecord { text-align: center; padding-top: 10px; }
+.t-norecord i { font-size: 30px; line-height: 30px; color: #D8D8D8;}
+.t-norecord p { font-size: 12px; margin: 0; line-height: 24px; color: #999;}
 
 /* 星级、操作状态 */
 .star-level { font-size: 14px;}
