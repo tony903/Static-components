@@ -9,6 +9,15 @@
 .t-table thead th { text-align: left; }
 .t-table tbody > tr:hover > td { background-color: #e9f5ff; }
 
+/* 有边线 */
+.t-table-bordered th, .t-table-bordered td { border: 1px solid #DDD;}
+
+/* 有斑马线 */
+.t-table-striped tr:nth-child(2n) { background-color: #f8f8f8;}
+
+/* 紧凑 */
+.t-table-condensed th, .t-table-condensed td { padding: 5px;}
+
 /* 选中整行、消息、成功、错误、警告 */
 .t-table tbody > tr.selected td { background-color: #fff5cc; }
 .t-table tbody > tr.selected:hover td { background-color: #fff5cc; }

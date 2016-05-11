@@ -24,10 +24,10 @@
     </div> -->
   </div>
   
-  <div class="t-list-search columns-4">
+  <div class="t-list-search t-columns-4">
     
     <!-- 检索字段 -->
-    <ul class="t-list-search-item">
+    <ul class="t-columns-group">
       <li>
         <!-- 必填项为label追加样式: necessary -->
         <label for="fm01">
@@ -269,11 +269,11 @@
 <script type="text/javascript">
   $(function(){
     $('.t-list-search-more').click(function(){
-      if($('.t-list-search-item li').hasClass('hide')) {
-        $('.t-list-search-item li.hide').addClass('show').removeClass('hide');
+      if($('.t-columns-group li').hasClass('hide')) {
+        $('.t-columns-group li.hide').addClass('show').removeClass('hide');
         $(this).children('i').addClass('icon-iconfontjiantou-copy').removeClass('icon-iconfontjiantou-copy-copy');
-      } else if($('.t-list-search-item li').hasClass('show')) {
-        $('.t-list-search-item li.show').addClass('hide').removeClass('show');
+      } else if($('.t-columns-group li').hasClass('show')) {
+        $('.t-columns-group li.show').addClass('hide').removeClass('show');
         $(this).children('i').addClass('icon-iconfontjiantou-copy-copy').removeClass('icon-iconfontjiantou-copy');
       }
     })
