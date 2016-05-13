@@ -2,6 +2,7 @@
 
 /* 表格 */
 .t-table { width: 100%; margin-bottom: 10px; font-size: 12px; border-collapse: collapse; border-spacing: 0; }
+.t-table caption { padding: 6px 8px; font-weight: bold; color: #666; line-height: 16px; border-bottom: 1px solid #DDD;}
 .t-table th { padding: 8px; background: #FAFAFA; font-weight: bold; color: #666; border-top: 1px solid #DDD; border-bottom: 1px solid #DDD; }
 .t-table td { padding: 8px; border-bottom: 1px solid #DDD; line-height: 16px; }
 .t-table tfoot td { padding: 8px 0; border-bottom: none; } 
@@ -16,7 +17,17 @@
 .t-table-striped tr:nth-child(2n) { background-color: #f8f8f8;}
 
 /* 紧凑 */
-.t-table-condensed th, .t-table-condensed td { padding: 5px;}
+.t-table-condensed th, .t-table-condensed td { padding: 5px; }
+
+/* 表格信息 */
+.t-table-info { }
+.t-table-info caption { border: 1px solid #DDD; border-bottom: none; text-align: left; background: #f1f5f8; }
+.t-table-info th, .t-table-info td { padding: 5px 8px; border: 1px solid #DDD; }
+.t-table-info .td-label { background-color: #f8f8f8; text-align: right; width: 120px; color: #666; }
+.t-table-info .td-content { color: #333;}
+
+/* 斑马线forIE8 */
+.t-bg-gray { background-color: #f8f8f8;}
 
 /* 选中整行、消息、成功、错误、警告 */
 .t-table tbody > tr.selected td { background-color: #fff5cc; }
