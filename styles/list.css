@@ -55,9 +55,6 @@
 .t-columns-group li.width-all { width: 100%; height: auto; line-height: 24px; padding: 6px 0; }
 .t-columns-group li.width-all > div { height: auto; }
 .t-columns-group li > div input, .t-columns-group li > div select, .t-columns-group li > div textarea { padding: 3px; width: 100%; box-sizing: border-box; }
-.t-columns-group li > div input.error, .t-columns-group li > div select.error, .t-columns-group li > div textarea.warning { border: 1px solid #dd808e; background: #fff2f4; color: #d83030; }
-.t-columns-group li > div input.warning, .t-columns-group li > div select.warning, .t-columns-group li > div textarea.warning { border: 1px solid #dfc48c; background: #fff8d5; color: #ad8032; }
-.t-columns-group li > div input.success, .t-columns-group li > div select.success, .t-columns-group li > div textarea.success { border: 1px solid #8ec73b; background: #f7ffeb; color: #6ba21c; }
 .t-columns-group li > div input { height: 26px; margin-top: 5px; background: #FFF; border: 1px solid #DDD; }
 .t-columns-group li > div input[type="checkbox"], .t-columns-group li > div input[type="radio"], .t-columns-group li > div input.check, .t-columns-group li > div input.radio { border: none; padding: auto; width: auto; height: auto; }
 .t-columns-group li > div textarea { border: 1px solid #DDD; margin-top: 6px; line-height: 22px; resize: none; }
@@ -66,7 +63,12 @@
 .t-columns-group li > div .bg-select { background:#FFF url(imgs/mini-icons.png) no-repeat right -57px; }
 .t-columns-group li.timegroup > div > div { width: 45%; float: left; }
 .t-columns-group li.timegroup > div > span { display: block; height: 36px; width: 10%; line-height: 36px; float: left; color: #666; text-align: center; }
-.t-columns-group li a.t-btn { height: 26px; line-height: 26px; font-size: 12px; color: #666; }
+.t-columns-group li > div > .t-btn { line-height: 1;}
+
+/* highlight */
+.t-columns-group li > div input.error, .t-columns-group li > div select.error, .t-columns-group li > div textarea.warning { border: 1px solid #dd808e; background: #fff2f4; color: #d83030; }
+.t-columns-group li > div input.warning, .t-columns-group li > div select.warning, .t-columns-group li > div textarea.warning { border: 1px solid #dfc48c; background: #fff8d5; color: #ad8032; }
+.t-columns-group li > div input.success, .t-columns-group li > div select.success, .t-columns-group li > div textarea.success { border: 1px solid #8ec73b; background: #f7ffeb; color: #6ba21c; }
 
 /* t-list-btns */
 .t-list-btns { padding: 6px 10px; margin-top: 10px; background: #f1f5f8; border-bottom: 1px solid #e6ecec; vertical-align: middle;}
@@ -77,7 +79,7 @@
 .t-list-btns > a { display: block; width: 28px; height: 28px; line-height: 28px; float: left; text-align: center; color: #999; text-decoration: none; padding-left: 10px; font-size: 18px;}
 .t-list-btns > a:hover { color: #333; }
 .t-list-btns > div { float: right; text-align: left; }
-.t-list-btns .t-btn { height: 26px; line-height: 26px; font-size: 12px; margin-left: 4px; }
+.t-list-btns .t-btn { margin-left: 4px;}
 
 /* t-list-result */
 .t-list-result { margin-top: 6px;}

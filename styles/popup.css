@@ -15,7 +15,7 @@
 .t-popup-title a { float: right; display: inline; display: block; height: 40px; line-height: 40px; padding: 0 6px; font-size: 16px; color: #999; text-align: center; text-decoration: none; }
 .t-popup-title a:hover { color: #333; }
 .t-popup-bottom { height: 50px; text-align: center; }
-.t-popup-bottom .t-btn { margin-top:4px; margin-left: 5px; margin-right: 5px; padding: 0 30px; }
+.t-popup-bottom .t-btn { margin-top:4px; margin-left: 5px; margin-right: 5px; padding-left: 30px; padding-right: 30px; }
 
 /* 弹出层，默认宽度600px 高度320px */
 .t-popup-layer .t-popup-container { width: 600px; height: 320px; margin-left: -300px; margin-top: -160px; }
