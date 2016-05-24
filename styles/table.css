@@ -45,13 +45,3 @@
 .t-norecord { text-align: center; padding-top: 10px; }
 .t-norecord i { font-size: 30px; line-height: 30px; color: #D8D8D8;}
 .t-norecord p { font-size: 12px; margin: 0; line-height: 24px; color: #999;}
-
-/* 星级、操作状态 */
-.star-level { font-size: 14px;}
-.star-level i { float: left; color: #ff9628;}
-.star-level i.disabled { color: #CCC;}
-.status span, .status-done span, .status-todo span { display: inline-block; padding: 2px 8px; border-radius: 3px; color: #FFF; font-weight: normal; }
-.status span { background: #E3E3E3; color: #777;}
-.status-todo span { background: #82be38; }
-.status-done span { background: #ffab00; }
-.star-level:after, .star-level:before { display: block; content: ""; clear: both; height: 0; font-size: 0; overflow: hidden; }

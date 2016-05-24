@@ -14,7 +14,6 @@
 .t-list-title { height: 40px; line-height: 40px; border-bottom: 4px solid #bdddf2; }
 .t-list-title > h2 { margin: 0; padding: 0; font-weight: normal; font-size: 16px; color: #333; display: inline-block; }
 .t-list-title > div { display: inline-block; float: right; text-align: right; font-size: 12px; }
-.t-list-title > div .t-btn { padding: 0 16px; font-size: 12px;}
 
 /* t-list-search */
 .t-list-search { padding: 10px 0; background: #F9F9F9; border: 1px solid #E8E8E8; border-top: 0; margin-bottom: 20px; position: relative; }
@@ -55,7 +54,7 @@
 .t-columns-group li.width-all { width: 100%; height: auto; line-height: 24px; padding: 6px 0; }
 .t-columns-group li.width-all > div { height: auto; }
 .t-columns-group li > div input, .t-columns-group li > div select, .t-columns-group li > div textarea { padding: 3px; width: 100%; box-sizing: border-box; }
-.t-columns-group li > div input { height: 26px; margin-top: 5px; background: #FFF; border: 1px solid #DDD; }
+.t-columns-group li > div input { height: 26px; line-height: 18px\9; margin-top: 5px; background: #FFF; border: 1px solid #DDD; }
 .t-columns-group li > div input[type="checkbox"], .t-columns-group li > div input[type="radio"], .t-columns-group li > div input.check, .t-columns-group li > div input.radio { border: none; padding: auto; width: auto; height: auto; }
 .t-columns-group li > div textarea { border: 1px solid #DDD; margin-top: 6px; line-height: 22px; resize: none; }
 .t-columns-group li > div .bg-date { background:#FFF url(imgs/mini-icons.png) no-repeat right 4px;}
