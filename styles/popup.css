@@ -5,7 +5,7 @@
 
 /* 半透明覆盖层，如不需要可样式隐藏其显示，或删除该DOM节点 */
 .t-popup-overlay { z-index: 1100; background-color: #000; opacity: 0.5; filter: alpha(opacity=50); }
-.t-popup, .t-popup-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+.t-popup, .t-popup-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; }
 
 /* 包装容器 */
 .t-popup-container { position: absolute; top: 50%; left: 50%; z-index: 1105; background-color: #fff; -webkit-box-shadow: 1px 1px 3px #666; -moz-box-shadow: 1px 1px 3px #666; box-shadow: 1px 1px 3px #666; border-radius: 5px; }
