@@ -21,53 +21,53 @@
 
 /* t-columns */
 .t-columns-1 .t-columns-group { padding-right: 12%; }
-.t-columns-1 li { width: 100%; }
-.t-columns-1 li > label { width: 28%; }
-.t-columns-1 li > div { width: 66%; }
-.t-columns-2 .t-columns-group { padding-right: 9%; }
-.t-columns-2 li { width: 50%; }
-.t-columns-2 li > label { width: 35%; }
-.t-columns-2 li > div { width: 60%; }
-.t-columns-2 li.width-all > label { width: 17.5%; }
-.t-columns-2 li.width-all > div { width: 80%; margin-left: 1%; }
-.t-columns-3 .t-columns-group { padding-right: 6%; }
-.t-columns-3 li { width: 33.33%; }
-.t-columns-3 li > label { width: 36%; }
-.t-columns-3 li > div { width: 58%; }
-.t-columns-3 li.width-all > label { width: 12%; }
-.t-columns-3 li.width-all > div { width: 86%; margin-left: 0.666%; }
-.t-columns-4 li { width: 25%; }
-.t-columns-4 li > label { width: 32%; }
-.t-columns-4 li > div { width: 62%; }
-.t-columns-4 li.width-half > label { width: 16%; }
-.t-columns-4 li.width-half > div { width: 81%; margin-left: 1%; }
-.t-columns-4 li.width-all > label { width: 8%; }
-.t-columns-4 li.width-all > div { width: 90.5%; margin-left: 0.5%; }
+.t-columns-1 .t-columns-group > li { width: 100%; }
+.t-columns-1 .t-columns-group > li > label { width: 28%; }
+.t-columns-1 .t-columns-group > li > div { width: 66%; }
+.t-columns-2 .t-columns-group > .t-columns-group { padding-right: 9%; }
+.t-columns-2 .t-columns-group > li { width: 50%; }
+.t-columns-2 .t-columns-group > li > label { width: 35%; }
+.t-columns-2 .t-columns-group > li > div { width: 60%; }
+.t-columns-2 .t-columns-group > li.width-all > label { width: 17.5%; }
+.t-columns-2 .t-columns-group > li.width-all > div { width: 80%; margin-left: 1%; }
+.t-columns-3 .t-columns-group > .t-columns-group { padding-right: 6%; }
+.t-columns-3 .t-columns-group > li { width: 33.33%; }
+.t-columns-3 .t-columns-group > li > label { width: 36%; }
+.t-columns-3 .t-columns-group > li > div { width: 58%; }
+.t-columns-3 .t-columns-group > li.width-all > label { width: 12%; }
+.t-columns-3 .t-columns-group > li.width-all > div { width: 86%; margin-left: 0.666%; }
+.t-columns-4 .t-columns-group > li { width: 25%; }
+.t-columns-4 .t-columns-group > li > label { width: 32%; }
+.t-columns-4 .t-columns-group > li > div { width: 62%; }
+.t-columns-4 .t-columns-group > li.width-half > label { width: 16%; }
+.t-columns-4 .t-columns-group > li.width-half > div { width: 81%; margin-left: 1%; }
+.t-columns-4 .t-columns-group > li.width-all > label { width: 8%; }
+.t-columns-4 .t-columns-group > li.width-all > div { width: 90.5%; margin-left: 0.5%; }
 
 .t-columns-group { margin: 0; padding: 0;}
 .t-columns-group:after, .t-columns-group:before { display: block; content: ""; clear: both; height: 0; font-size: 0; overflow: hidden; }
-.t-columns-group li { height: 36px; list-style: none; line-height: 36px; font-size: 12px; float: left; vertical-align: top; }
-.t-columns-group li > label { display: block; float: left; height: 36px; line-height: 36px; color: #666; text-align: right; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.t-columns-group li > label.necessary:before { content: "*"; color: #ff595f; }
-.t-columns-group li > div { display: block; float: left; height: 36px; color: #333; text-align: left; margin-left: 2%; }
-.t-columns-group li.width-half { width: 50%; }
-.t-columns-group li.width-all { width: 100%; height: auto; line-height: 24px; padding: 6px 0; }
-.t-columns-group li.width-all > div { height: auto; }
-.t-columns-group li > div input, .t-columns-group li > div select, .t-columns-group li > div textarea { padding: 3px; width: 100%; box-sizing: border-box; }
-.t-columns-group li > div input { height: 26px; line-height: 18px\9; margin-top: 5px; background: #FFF; border: 1px solid #DDD; }
-.t-columns-group li > div input[type="checkbox"], .t-columns-group li > div input[type="radio"], .t-columns-group li > div input.check, .t-columns-group li > div input.radio { border: none; padding: auto; width: auto; height: auto; }
-.t-columns-group li > div textarea { border: 1px solid #DDD; margin-top: 6px; line-height: 22px; resize: none; }
-.t-columns-group li > div .bg-date { background:#FFF url(imgs/mini-icons.png) no-repeat right 4px;}
-.t-columns-group li > div .bg-tree { background:#FFF url(imgs/mini-icons.png) no-repeat right -27px; }
-.t-columns-group li > div .bg-select { background:#FFF url(imgs/mini-icons.png) no-repeat right -57px; }
-.t-columns-group li.timegroup > div > div { width: 45%; float: left; }
-.t-columns-group li.timegroup > div > span { display: block; height: 36px; width: 10%; line-height: 36px; float: left; color: #666; text-align: center; }
-.t-columns-group li > div > .t-btn { line-height: 1;}
+.t-columns-group > li { height: 36px; list-style: none; line-height: 36px; font-size: 12px; float: left; vertical-align: top; }
+.t-columns-group > li > label { display: block; float: left; height: 36px; line-height: 36px; color: #666; text-align: right; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.t-columns-group > li > label.necessary:before { content: "*"; color: #ff595f; }
+.t-columns-group > li > div { display: block; float: left; height: 36px; color: #333; text-align: left; margin-left: 2%; }
+.t-columns-group > li.width-half { width: 50%; }
+.t-columns-group > li.width-all { width: 100%; height: auto; line-height: 24px; padding: 6px 0; }
+.t-columns-group > li.width-all > div { height: auto; }
+.t-columns-group > li > div input, .t-columns-group li > div select, .t-columns-group li > div textarea { padding: 3px; width: 100%; box-sizing: border-box; }
+.t-columns-group > li > div input { height: 26px; line-height: 18px\9; margin-top: 5px; background: #FFF; border: 1px solid #DDD; }
+.t-columns-group > li > div input[type="checkbox"], .t-columns-group li > div input[type="radio"], .t-columns-group li > div input.check, .t-columns-group li > div input.radio { border: none; padding: auto; width: auto; height: auto; }
+.t-columns-group > li > div textarea { border: 1px solid #DDD; margin-top: 6px; line-height: 22px; resize: none; }
+.t-columns-group > li > div .bg-date { background:#FFF url(imgs/mini-icons.png) no-repeat right 4px;}
+.t-columns-group > li > div .bg-tree { background:#FFF url(imgs/mini-icons.png) no-repeat right -27px; }
+.t-columns-group > li > div .bg-select { background:#FFF url(imgs/mini-icons.png) no-repeat right -57px; }
+.t-columns-group > li.timegroup > div > div { width: 45%; float: left; }
+.t-columns-group > li.timegroup > div > span { display: block; height: 36px; width: 10%; line-height: 36px; float: left; color: #666; text-align: center; }
+.t-columns-group > li > div > .t-btn { line-height: 1;}
 
 /* highlight */
-.t-columns-group li > div input.error, .t-columns-group li > div select.error, .t-columns-group li > div textarea.warning { border: 1px solid #dd808e; background: #fff2f4; color: #d83030; }
-.t-columns-group li > div input.warning, .t-columns-group li > div select.warning, .t-columns-group li > div textarea.warning { border: 1px solid #dfc48c; background: #fff8d5; color: #ad8032; }
-.t-columns-group li > div input.success, .t-columns-group li > div select.success, .t-columns-group li > div textarea.success { border: 1px solid #8ec73b; background: #f7ffeb; color: #6ba21c; }
+.t-columns-group > li > div input.error, .t-columns-group li > div select.error, .t-columns-group li > div textarea.warning { border: 1px solid #dd808e; background: #fff2f4; color: #d83030; }
+.t-columns-group > li > div input.warning, .t-columns-group li > div select.warning, .t-columns-group li > div textarea.warning { border: 1px solid #dfc48c; background: #fff8d5; color: #ad8032; }
+.t-columns-group > li > div input.success, .t-columns-group li > div select.success, .t-columns-group li > div textarea.success { border: 1px solid #8ec73b; background: #f7ffeb; color: #6ba21c; }
 
 /* t-list-btns */
 .t-list-btns { padding: 6px 10px; margin-top: 10px; background: #f1f5f8; border-bottom: 1px solid #e6ecec; vertical-align: middle;}
