@@ -2,16 +2,16 @@
 
 /* 星级 */
 .t-stars { font-size: 14px;}
-.t-stars i { float: left; color: #ff9628;}
+.t-stars i { float: left; color: #f5884f;}
 .t-stars i.disabled { color: #CCC;}
 .t-stars:after, .t-stars:before { display: block; content: ""; clear: both; height: 0; font-size: 0; overflow: hidden; }
 
 /* 标签 */
 .t-tag, .t-tag-done, .t-tag-todo, .t-tag-del { display: inline-block; line-height: 1.5; padding: 2px 8px; border-radius: 3px; color: #FFF; font-weight: normal; font-size:12px;}
 .t-tag { background: #E3E3E3; color: #777;}
-.t-tag-todo { background: #82be38; }
-.t-tag-done { background: #ffab00; }
-.t-tag-del { background:#3A8BE0; padding-right:3px;}
+.t-tag-todo { background: #60bb58; }
+.t-tag-done { background: #f5884f; }
+.t-tag-del { background:#339dd9; padding-right:3px;}
 .t-tag-del a.icon-chahao { display: inline-block;margin-left:3px;padding: 1px 0px 0px 0px; font-family: "iconfont" !important;font-style: normal; text-decoration: none;color:#fff;}
 
 /* 可选择标签 */
@@ -29,8 +29,8 @@ a.t-tag-category-lg.selected p { background-position: right -434px; }
 
 /* 徽章 */
 .t-badge, .t-badge-red { display: inline-block; line-height: 1.5; padding: 2px 6px; border-radius: 6px; color: #FFF; font-weight: normal; font-size:12px; }
-.t-badge { background:#3A8BE0;}
-.t-badge-red { background:#F04B3C;}
+.t-badge { background:#339dd9;}
+.t-badge-red { background:#cc3300;}
 
 /* loading */
 .t-loading, .t-loading-cmcc, .t-loading-cmcc-lg { display: inline-block; line-height: 1.5; border: 1px solid #ccc; border-radius: 5px; -webkit-box-shadow: 1px 1px 3px #ccc; -moz-box-shadow: 1px 1px 3px #ccc; box-shadow:1px 1px 3px #ccc; color: #666; }
