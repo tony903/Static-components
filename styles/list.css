@@ -46,7 +46,7 @@
 
 .t-columns-group { margin: 0; padding: 0;}
 .t-columns-group:after, .t-columns-group:before { display: block; content: ""; clear: both; height: 0; font-size: 0; overflow: hidden; }
-.t-columns-group > li { height: 36px; list-style: none; line-height: 36px; font-size: 12px; float: left; vertical-align: top; }
+.t-columns-group > li { height: 36px; list-style: none; font-size: 12px; float: left; vertical-align: top; }
 .t-columns-group > li > label { display: block; float: left; height: 36px; line-height: 36px; color: #666; text-align: right; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .t-columns-group > li > label.necessary:before { content: "*"; color: #ff595f; }
 .t-columns-group > li > div { display: block; float: left; height: 36px; color: #333; text-align: left; margin-left: 2%; }
@@ -56,7 +56,8 @@
 .t-columns-group > li > div input, .t-columns-group > li > div select, .t-columns-group > li > div textarea { padding: 3px; width: 100%; box-sizing: border-box; border: 1px solid #DDD;}
 .t-columns-group > li > div input { height: 26px; line-height: 18px\9; margin-top: 5px; background: #FFF; }
 .t-columns-group > li > div input[type="checkbox"], .t-columns-group > li > div input[type="radio"], .t-columns-group > li > div input.check, .t-columns-group > li > div input.radio { border: none; padding: auto; width: auto; height: auto; }
-.t-columns-group > li > div select { appearance:none; -moz-appearance:none; -webkit-appearance:none;}
+.t-columns-group > li > div select { appearance:none; -moz-appearance:none; -webkit-appearance:none; border-radius: 0; margin-top: 5px; height: 26px; line-height: 18px\9;}
+.t-columns-group > li > div select option { line-height: 18px;}
 .t-columns-group > li > div textarea { border: 1px solid #DDD; margin-top: 6px; line-height: 22px; resize: none; }
 .t-columns-group > li > div .bg-date { background:#FFF url(imgs/mini-icons.png) no-repeat right 4px;}
 .t-columns-group > li > div .bg-tree { background:#FFF url(imgs/mini-icons.png) no-repeat right -27px; }
