@@ -53,9 +53,10 @@
 .t-columns-group > li.width-half { width: 50%; }
 .t-columns-group > li.width-all { width: 100%; height: auto; line-height: 24px; padding: 6px 0; }
 .t-columns-group > li.width-all > div { height: auto; }
-.t-columns-group > li > div input, .t-columns-group li > div select, .t-columns-group li > div textarea { padding: 3px; width: 100%; box-sizing: border-box; }
-.t-columns-group > li > div input { height: 26px; line-height: 18px\9; margin-top: 5px; background: #FFF; border: 1px solid #DDD; }
-.t-columns-group > li > div input[type="checkbox"], .t-columns-group li > div input[type="radio"], .t-columns-group li > div input.check, .t-columns-group li > div input.radio { border: none; padding: auto; width: auto; height: auto; }
+.t-columns-group > li > div input, .t-columns-group > li > div select, .t-columns-group > li > div textarea { padding: 3px; width: 100%; box-sizing: border-box; border: 1px solid #DDD;}
+.t-columns-group > li > div input { height: 26px; line-height: 18px\9; margin-top: 5px; background: #FFF; }
+.t-columns-group > li > div input[type="checkbox"], .t-columns-group > li > div input[type="radio"], .t-columns-group > li > div input.check, .t-columns-group > li > div input.radio { border: none; padding: auto; width: auto; height: auto; }
+.t-columns-group > li > div select { appearance:none; -moz-appearance:none; -webkit-appearance:none;}
 .t-columns-group > li > div textarea { border: 1px solid #DDD; margin-top: 6px; line-height: 22px; resize: none; }
 .t-columns-group > li > div .bg-date { background:#FFF url(imgs/mini-icons.png) no-repeat right 4px;}
 .t-columns-group > li > div .bg-tree { background:#FFF url(imgs/mini-icons.png) no-repeat right -27px; }
