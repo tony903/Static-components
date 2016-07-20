@@ -64,7 +64,7 @@
 .t-columns-group > li > div .bg-select { background:#FFF url(imgs/mini-icons.png) no-repeat right -57px; }
 .t-columns-group > li.timegroup > div > div { width: 45%; float: left; }
 .t-columns-group > li.timegroup > div > span { display: block; height: 36px; width: 10%; line-height: 36px; float: left; color: #666; text-align: center; }
-.t-columns-group > li > div > .t-btn { line-height: 1;}
+.t-columns-group > li > div > .t-btn { line-height: 1; margin-top: 4px;}
 
 /* highlight */
 .t-columns-group > li > div input.error, .t-columns-group li > div select.error, .t-columns-group li > div textarea.warning { border: 1px solid #dd808e; background: #fff2f4; color: #d83030; }
